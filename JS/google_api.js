@@ -104,7 +104,7 @@ let places = [
     location: [19.4971688, -99.1988667],
     rating: 3.2,
     photo: ['https://http2.mlstatic.com/D_NQ_NP_600593-MLM31810987438_082019-W.jpg'],
-    description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
+    description: "Deliciosos tacos al vapor de buche,ojo,lengua,maciza "
   },
   {
     name: "Carnitas el tio",
