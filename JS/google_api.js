@@ -96,28 +96,28 @@ let places = [
     name: "Tacos el paisa",
     location: [19.4968158, -99.2007130],
     rating: 4.2,
-    photos: [],
+    photo: ['https://http2.mlstatic.com/corrida-financiera-para-proyecto-tacos-puesto-D_NQ_NP_735701-MLM20373186463_082015-O.webp'],
     description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
   },
   {
     name: "Tortas el loro",
     location: [19.4971688, -99.1988667],
     rating: 3.2,
-    photos: [],
+    photo: ['https://http2.mlstatic.com/D_NQ_NP_600593-MLM31810987438_082019-W.jpg'],
     description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
   },
   {
     name: "Carnitas el tio",
     location: [19.4946599, -99.1986569],
     rating: 4.7,
-    photos: [],
+    photo: ['https://s3-media0.fl.yelpcdn.com/bphoto/VdbnBRjAIP8Ss7kZgemUvA/o.jpg'],
     description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
   },
   {
     name: "Tacos el gallo",
     location: [19.4936983, -99.2016597],
     rating: 4.9,
-    photos: [],
+    photo: ['https://i.pinimg.com/originals/0d/dc/59/0ddc596d1a893e5552d75575670eaaaa.jpg'],
     description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
 
   },
@@ -125,8 +125,8 @@ let places = [
     name: 'Fonda "La Doña"',
     location: [19.4949635, -99.2038869],
     rating: 3.9,
-    photos: [],
-    description: "Deliciosos tacos de pastor, asada, chuleta y vegetarianos. Con diversas opciones de salsas"
+    photo: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWB3tAJcVACxERP2T7Mqm7TAjE2DA-IWOvhSJ7KYPQRFlfTnLY&s'],
+    description: "Platillos mexicanos y comida corrida del dia, "
 
   }
 ];
@@ -157,12 +157,13 @@ for (i = 0; i < places.length; i++) {
 
 let cardsTitle = $(".card-title")
     cardsText = $(".card-text")
+    cardsImage = $(".img-square-wrapper")
 
 
-
-  for (i = 0; i < cardsTitle.length; i++) {
+  for (i = 0; i < places.length; i++) {
     $(cardsTitle[i]).html(places[i].name)
     $(cardsText[i]).html(places[i].description) 
+    $(cardsImage[i]).attr("src",places[i].photo[0]);
 }
 
 
