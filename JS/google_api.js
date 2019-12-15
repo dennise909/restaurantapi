@@ -125,7 +125,7 @@ let places = [
     name: 'Fonda "La Doña"',
     location: [19.4949635, -99.2038869],
     rating: 3.9,
-    photo: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWB3tAJcVACxERP2T7Mqm7TAjE2DA-IWOvhSJ7KYPQRFlfTnLY&s'],
+    photo: ['https://media-cdn.tripadvisor.com/media/photo-s/01/7d/9f/64/the-ambience-bohemian.jpg'],
     description: "Platillos mexicanos y comida corrida del dia, "
 
   }
